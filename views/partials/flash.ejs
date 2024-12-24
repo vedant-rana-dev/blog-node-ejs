@@ -1,0 +1,10 @@
+<% if (message) { %>
+<script>
+  Swal.fire({
+    title: "<%= messageType %>",
+    text: "<%= message %>",
+    icon: "<%= messageType %>",
+    confirmButtonText: "OK",
+  });
+</script>
+<% } %>
